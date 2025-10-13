@@ -11,30 +11,21 @@
       padding: 0;
       font-family: 'Poppins', sans-serif;
       color: #fff;
-      background: url("img/background.jpeg") no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .overlay {
-      background: rgba(0, 0, 0, 0.55);
-      width: 100%;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 20px;
-      box-sizing: border-box;
       text-align: center;
+      background: url("img/background.jpeg") no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      backdrop-filter: brightness(0.7);
+      overflow-x: hidden;
     }
 
     header {
+      margin-top: 80px;
       max-width: 800px;
-      margin-bottom: 60px;
+      padding: 0 20px;
     }
 
     header h1 {
@@ -42,89 +33,96 @@
       color: #59aaff;
       font-weight: 700;
       margin-bottom: 15px;
-      line-height: 1.3;
     }
 
     header p {
       font-size: 17px;
       line-height: 1.6;
       color: #f1f1f1;
+      max-width: 700px;
       margin: 0 auto;
-      max-width: 600px;
     }
 
     .circle-buttons {
       display: flex;
-      justify-content: center;
-      gap: 20px;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 70px;
+      padding: 0 20px 60px;
     }
 
-    a.circle {
-      width: 100px;
-      height: 100px;
+    .circle {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       background: linear-gradient(135deg, #000, #59aaff);
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
       color: #fff;
       font-weight: 600;
       cursor: pointer;
       transition: 0.3s ease;
-      box-shadow: 0 0 10px rgba(89, 170, 255, 0.5);
-      text-align: center;
+      box-shadow: 0 0 10px rgba(89, 170, 255, 0.6);
       font-size: 0.9rem;
       padding: 10px;
-      text-decoration: none;
     }
 
-    a.circle:hover {
+    .circle:hover {
       transform: scale(1.1);
       background: linear-gradient(135deg, #59aaff, #000);
       box-shadow: 0 0 20px rgba(89, 170, 255, 0.9);
     }
 
-    /* 📱 Мобильная адаптация */
+    /* 📱 Mobile styles */
     @media (max-width: 600px) {
+      header {
+        margin-top: 50px;
+      }
+
       header h1 {
         font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 10px;
       }
 
       header p {
         font-size: 14px;
-      }
-
-      a.circle {
-        width: 75px;
-        height: 75px;
-        font-size: 0.75rem;
+        padding: 0 10px;
       }
 
       .circle-buttons {
         gap: 12px;
+        margin-top: 40px;
+      }
+
+      .circle {
+        width: 85px;
+        height: 85px;
+        font-size: 0.8rem;
+        padding: 6px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>Казахстанские бренды становятся частью новой экономики</h1>
-      <p>
-        Мы верим, что локальные продукты могут быть не хуже мировых — и даже лучше.
-        Наша цель — объединить создателей и покупателей, чтобы поддерживать отечественное
-        и развивать креативную индустрию.
-      </p>
-    </header>
+  <header>
+    <h1>Казахстанские бренды становятся частью новой экономики</h1>
+    <p>
+      Мы верим, что локальные продукты могут быть не хуже мировых — и даже лучше.
+      Наша цель — объединить создателей и покупателей, чтобы поддерживать отечественное
+      и развивать креативную индустрию.
+    </p>
+  </header>
 
-    <div class="circle-buttons">
-      <a href="fashion.html" class="circle">Мода и стиль</a>
-      <a href="tech.html" class="circle">Технологии</a>
-      <a href="food.html" class="circle">Еда</a>
-      <a href="beauty.html" class="circle">Косметика</a>
-      <a href="home.html" class="circle">Дом</a>
-    </div>
+  <div class="circle-buttons">
+    <div class="circle">Мода</div>
+    <div class="circle">Технологии</div>
+    <div class="circle">Еда</div>
+    <div class="circle">Косметика</div>
+    <div class="circle">Дом</div>
   </div>
 </body>
 </html>
