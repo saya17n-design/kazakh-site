@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Косметика и уход — KAZAKH</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beauty — Казахстанские бренды косметики</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: url("img/backgroundkz.jpeg") no-repeat center center/cover;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(4px);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 34px;
+      color: #59aaff;
+      margin-bottom: 40px;
+    }
+
+    header p {
+      color: #e6e6e6;
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      line-height: 1.6;
+    }
+
+    .brands {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .brand {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+      padding: 20px;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px rgba(89, 170, 255, 0.3);
+      text-align: left;
+    }
+
+    .brand:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-4px);
+      box-shadow: 0 0 20px rgba(89, 170, 255, 0.6);
+    }
+
+    .brand a {
+      color: #59aaff;
+      font-weight: 600;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .brand p {
+      color: #e6e6e6;
+      font-size: 14px;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+      .brand a {
+        font-size: 16px;
+      }
+      .brand p {
+        font-size: 13px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Косметика и уход</h1>
-  <p>Скоро здесь появится контент про казахстанские бренды косметики и ухода.</p>
+  <div class="content">
+    <header>
+      <h1>Косметика и уход — Казахстанские бренды</h1>
+      <p>Откройте отечественные бренды красоты: уход за кожей, натуральные компоненты и стиль Казахстана.</p>
+    </header>
+
+    <div class="brands">
+      <div class="brand"><a href="https://www.instagram.com/asiya.asiacosmetics/" target="_blank">ASIYA</a><p>Бренд натуральной косметики, разработанный в Казахстане с акцентом на природные компоненты.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/sensulu.cosmeticss/" target="_blank">Sen Sulu</a><p>Казахстанский бренд косметики, предлагающий широкий ассортимент ухода.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/sholpan_cosmetics/" target="_blank">Sholpan Cosmetics</a><p>Популярный бренд декоративной косметики и ухода из Казахстана.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/savonry/" target="_blank">Savonry</a><p>Органическая косметика: мыло, уход за телом с натуральными ингредиентами.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/green_matrix_kz/" target="_blank">Green Matrix</a><p>Казахстанский бренд ухода за кожей — один из участников национального рынка красоты.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/agenyz/" target="_blank">AGenYZ</a><p>Производитель дермокосметики и ухода для лица и тела в Казахстане.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/shik_beauty_kz/" target="_blank">Shik Beauty KZ</a><p>Современный бренд ухода с фокусом на молодую аудиторию.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/glam_kz_beauty/" target="_blank">Glam KZ Beauty</a><p>Декоративная косметика и бьюти-аксессуары, Казахстан-ориентированный бренд.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/eco_beauty_kz/" target="_blank">Eco Beauty KZ</a><p>Натуральный уход и минимализм — тренд бренда.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/derm_almaty/" target="_blank">Derm Almaty</a><p>Косметика-уход, аптечный сегмент, ориентирован на кожу и дерматологию.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/thebodyshop_kaz/" target="_blank">The Body Shop Kazakhstan</a><p>Международный бренд с присутствием в Казахстане, натуральная косметика и социальная ответственность.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/herra.kz/" target="_blank">Herra Cosmetics</a><p>Казахстанская косметика-марка, развивающаяся в категории декоративной и ухода.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/maccosmeticsqaz/" target="_blank">M·A·C Cosmetics Qazaqstan</a><p>Официальное представительство M·A·C в Казахстане.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/dalba_kz/" target="_blank">d’Alba KZ</a><p>Косметика на основе итальянского белого трюфеля — премиальный сегмент.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/beauty.brand.kazakhstan/" target="_blank">Beauty Brand Kazakhstan</a><p>Платформа-магазин косметики и ухода, популярный в Казахстане.</p></div>
+      <div class="brand"><a href="https://www.instagram.com/makeuprevolution_kz/" target="_blank">Makeup Revolution Kazakhstan</a><p>Официальное присутствие международного бренда на казахстанском рынке.</p></div>
+    </div>
+  </div>
 </body>
 </html>

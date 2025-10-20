@@ -43,40 +43,47 @@
       margin: 0 auto;
     }
 
+    /* --- кнопки --- */
     .circle-buttons {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 25px;
+      gap: 35px;
       margin-top: 70px;
-      padding: 0 20px 60px;
+      padding-bottom: 60px;
+    }
+
+    .circle-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
     }
 
     .circle {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #000, #59aaff);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      font-weight: 600;
+      background: url("img/button.jpeg") no-repeat center center/cover;
+      box-shadow: 0 0 15px rgba(41, 122, 201, 0.6);
       cursor: pointer;
       transition: 0.3s ease;
-      box-shadow: 0 0 10px rgba(89, 170, 255, 0.6);
-      font-size: 0.9rem;
-      padding: 10px;
     }
 
     .circle:hover {
-      transform: scale(1.1);
-      background: linear-gradient(135deg, #59aaff, #000);
-      box-shadow: 0 0 20px rgba(89, 170, 255, 0.9);
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(41, 122, 201, 0.9);
     }
 
-    /* 📱 Mobile styles */
+    .circle-label {
+      margin-top: 12px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+
+    /* --- адаптив --- */
     @media (max-width: 600px) {
       header {
         margin-top: 50px;
@@ -94,15 +101,18 @@
       }
 
       .circle-buttons {
-        gap: 12px;
+        gap: 20px;
         margin-top: 40px;
       }
 
       .circle {
-        width: 85px;
-        height: 85px;
-        font-size: 0.8rem;
-        padding: 6px;
+        width: 90px;
+        height: 90px;
+      }
+
+      .circle-label {
+        font-size: 15px;
+        margin-top: 8px;
       }
     }
   </style>
@@ -118,11 +128,30 @@
   </header>
 
   <div class="circle-buttons">
-    <div class="circle">Мода</div>
-    <div class="circle">Технологии</div>
-    <div class="circle">Еда</div>
-    <div class="circle">Косметика</div>
-    <div class="circle">Дом</div>
+    <a href="fashion.html" class="circle-item">
+      <div class="circle"></div>
+      <div class="circle-label">Мода</div>
+    </a>
+
+    <a href="tech.html" class="circle-item">
+      <div class="circle"></div>
+      <div class="circle-label">Технологии</div>
+    </a>
+
+    <a href="food.html" class="circle-item">
+      <div class="circle"></div>
+      <div class="circle-label">Еда</div>
+    </a>
+
+    <a href="beauty.html" class="circle-item">
+      <div class="circle"></div>
+      <div class="circle-label">Косметика</div>
+    </a>
+
+    <a href="home.html" class="circle-item">
+      <div class="circle"></div>
+      <div class="circle-label">Дом</div>
+    </a>
   </div>
 </body>
 </html>
