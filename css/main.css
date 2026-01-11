@@ -114,3 +114,22 @@ header.logo{
     font-size: 29px;
     font-weight: 800;
 }
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.visits {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.visits img {
+  display: block;
+}
