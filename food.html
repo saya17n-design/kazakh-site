@@ -1,242 +1,89 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Еда и напитки — Казахстанские бренды</title>
-
-  <style>
-    :root{
-      --accent: #297AC9;
-      --card-bg: rgba(255,255,255,0.06);
-      --card-bg-hover: rgba(255,255,255,0.12);
-      --text: #ffffff;
-      --muted: #e6e6e6;
-      --max-width: 1200px;
-    }
-
-    html,body{
-      height:100%;
-      margin:0;
-      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: url("img/backgroundfood.jpeg") center/cover no-repeat fixed;
-      color: var(--text);
-    }
-
-    /* матовое покрытие поверх фона */
-    body::before{
-      content:"";
-      position:fixed;
-      inset:0;
-      background: rgba(0,0,0,0.55);
-      z-index:0;
-      backdrop-filter: blur(3px);
-    }
-
-    .wrap{
-      position:relative;
-      z-index:1;
-      max-width: var(--max-width);
-      margin: 48px auto;
-      padding: 36px;
-    }
-
-    header{
-      text-align:center;
-      margin-bottom: 28px;
-    }
-
-    header h1{
-      margin:0;
-      font-size:30px;
-      color: var(--accent);
-      font-weight:700;
-    }
-
-    header p{
-      margin:12px 0 0;
-      color: var(--muted);
-      max-width:900px;
-      margin-left:auto;
-      margin-right:auto;
-      font-size:15px;
-      line-height:1.5;
-    }
-
-    .grid{
-      display:grid;
-      gap:20px;
-      margin-top:30px;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    .card{
-      background: var(--card-bg);
-      border-radius:14px;
-      padding:18px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.35), 0 0 8px rgba(41,122,201,0.06);
-      transition: transform 200ms ease, background 200ms ease, box-shadow 200ms ease;
-      display:flex;
-      flex-direction:column;
-      justify-content:flex-start;
-      min-height:120px;
-    }
-
-    .card:hover{
-      transform: translateY(-6px);
-      background: var(--card-bg-hover);
-      box-shadow: 0 18px 36px rgba(0,0,0,0.5), 0 0 28px rgba(41,122,201,0.12);
-    }
-
-    .brand-title{
-      font-size:18px;
-      font-weight:700;
-      color: var(--text);
-      margin:0 0 8px 0;
-    }
-
-    .brand-title a{
-      color: var(--text);
-      text-decoration:none;
-    }
-
-    .brand-link{
-      color: var(--accent);
-      font-weight:600;
-      font-size:14px;
-      text-decoration:none;
-    }
-
-    .desc{
-      margin:0;
-      color: var(--muted);
-      font-size:14px;
-      line-height:1.45;
-      margin-top:auto;
-    }
-
-    .footer-note{
-      margin-top:28px;
-      color: #cbd5e1;
-      font-size:13px;
-      text-align:center;
-    }
-
-    @media (max-width:600px){
-      header h1{ font-size:22px; }
-      .brand-title{ font-size:16px; }
-      .desc{ font-size:13px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Brands - Kazakh Business Hub</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Еда & напитки — казахстанские бренды</h1>
-      <p>Список официальных производителей и брендов еды и напитков из Казахстана. Каждая карточка ведёт на официальный сайт компании (если сайт отсутствует — на официальную страницу компании в сети).</p>
-    </header>
 
-    <section class="grid">
-      <!-- 1 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.rakhat.kz/en/" target="_blank" rel="noopener">LOTTE RAKHAT (Рахат)</a></h3>
-        <p class="desc">Крупнейшая казахстанская кондитерская фабрика — шоколад, конфеты, вафли и подарочные наборы. (официальный сайт)</p>
-      </article>
+<header>
+<h2>Kazakh Business Hub</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="beauty.html">Beauty</a>
+<a href="fashion.html">Fashion</a>
+<a href="food.html">Food</a>
+<a href="home.html">Home Living</a>
+<a href="tech.html">Tech</a>
+</nav>
+</header>
 
-      <!-- 2 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://bayansulu.kz/en/" target="_blank" rel="noopener">Bayan Sulu (Баян Сұлу)</a></h3>
-        <p class="desc">Одна из ведущих кондитерских фабрик Казахстана — широкий ассортимент шоколада и конфет. (официальный сайт)</p>
-      </article>
+<section class="hero">
+<h1>Food Brands</h1>
+<p>Discover Kazakhstan’s top food and beverage brands.</p>
+</section>
 
-      <!-- 3 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.konfetykaragandy.kz/" target="_blank" rel="noopener">Konfety Karagandy (Конфеты Караганды)</a></h3>
-        <p class="desc">Традиционный казахстанский производитель кондитерских изделий с собственным ассортиментом плиток, конфет и вафель. (официальный сайт)</p>
-      </article>
+<section class="section">
+<div class="grid">
 
-      <!-- 4 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://rgbrands.com/" target="_blank" rel="noopener">RG Brands</a></h3>
-        <p class="desc">Крупный производитель напитков и FMCG в Казахстане: минеральная вода, соки, газировка и другие продукты. (официальный сайт)</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://www.rakhat.kz/en/" target="_blank">LOTTE RAKHAT (Рахат)</a></h3>
+<p class="desc">Крупнейшая казахстанская кондитерская фабрика — шоколад, конфеты, вафли и подарочные наборы.</p>
+</article>
 
-      <!-- 5 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.tassay.kz/en/" target="_blank" rel="noopener">TASSAY</a></h3>
-        <p class="desc">Известный казахстанский бренд питьевой и минеральной воды, лидер по качеству и дистрибуции. (официальный сайт)</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://bayansulu.kz/en/" target="_blank">Bayan Sulu (Баян Сұлу)</a></h3>
+<p class="desc">Ведущая кондитерская фабрика Казахстана с ассортиментом шоколада и конфет.</p>
+</article>
 
-      <!-- 6 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://alexsu.kz/" target="_blank" rel="noopener">Alex Saryagash / Saryagash</a></h3>
-        <p class="desc">Производители натуральной минеральной воды Сары-Агаш и сопутствующих продуктов — официальная страница производителя.</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://www.konfetykaragandy.kz/" target="_blank">Konfety Karagandy</a></h3>
+<p class="desc">Традиционный казахстанский производитель конфет и вафель.</p>
+</article>
 
-      <!-- 7 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://maslodel.kz/" target="_blank" rel="noopener">МАСЛО-ДЕЛ</a></h3>
-        <p class="desc">Крупный казахстанский производитель молочной, масложировой и соусной продукции (официальный сайт компании).</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://rgbrands.com/" target="_blank">RG Brands</a></h3>
+<p class="desc">Производитель напитков и FMCG в Казахстане: вода, соки, газировка и другие продукты.</p>
+</article>
 
-      <!-- 8 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://altyndan.kz/" target="_blank" rel="noopener">Altyn-Dan (Алтын-Дан)</a></h3>
-        <p class="desc">Производитель муки, макаронных изделий и сопутствующих продуктов — крупный игрок в агропроме Казахстана.</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://www.tassay.kz/en/" target="_blank">TASSAY</a></h3>
+<p class="desc">Лидер по качеству питьевой и минеральной воды в Казахстане.</p>
+</article>
 
-      <!-- 9 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://a-product.kz/" target="_blank" rel="noopener">Almaty Product (Алматинский продукт)</a></h3>
-        <p class="desc">Производитель печенья, снеков и кондитерки — одна из заметных фабрик страны (официальный сайт).</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://alexsu.kz/" target="_blank">Alex Saryagash / Saryagash</a></h3>
+<p class="desc">Производители натуральной минеральной воды Сары-Агаш и сопутствующих продуктов.</p>
+</article>
 
-      <!-- 10 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://kfp.kz/en" target="_blank" rel="noopener">KazFoodProducts / холдинг</a></h3>
-        <p class="desc">Агрохолдинг с производством и переработкой сельхозпродукции — в портфеле есть продукты для розницы и HoReCa.</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://maslodel.kz/" target="_blank">МАСЛО-ДЕЛ</a></h3>
+<p class="desc">Производитель молочной, масложировой и соусной продукции.</p>
+</article>
 
-      <!-- 11 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.rgbrands.com/en/production" target="_blank" rel="noopener">RG Brands — подразделения (соки / напитки)</a></h3>
-        <p class="desc">Доп. страница RG Brands с описанием заводов и продуктовых линий — полезно для понимания ассортимента напитков.</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://altyndan.kz/" target="_blank">Altyn-Dan (Алтын-Дан)</a></h3>
+<p class="desc">Производитель муки, макаронных изделий и сопутствующих продуктов.</p>
+</article>
 
-      <!-- 12 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.rakhat.kz/en/products/" target="_blank" rel="noopener">LOTTE RAKHAT — Каталог продукции</a></h3>
-        <p class="desc">Каталог и ассортимент Рахат — шоколадные плитки, батончики, конфеты и подарочные наборы (официальный раздел).</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://a-product.kz/" target="_blank">Almaty Product</a></h3>
+<p class="desc">Производитель печенья, снеков и кондитерки.</p>
+</article>
 
-      <!-- 13 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.tassay.kz/files/tassay-certificates.pdf" target="_blank" rel="noopener">TASSAY — сертификаты / информация</a></h3>
-        <p class="desc">Официальные документы и сертификаты качества производителя воды (страница производителя).</p>
-      </article>
+<article class="card">
+<h3 class="brand-title"><a href="https://kfp.kz/en" target="_blank">KazFoodProducts / холдинг</a></h3>
+<p class="desc">Агрохолдинг с производством и переработкой сельхозпродукции.</p>
+</article>
 
-      <!-- 14 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.rakhat.kz/en/o-kompanii/" target="_blank" rel="noopener">LOTTE RAKHAT — О компании</a></h3>
-        <p class="desc">История, филиалы и миссия крупнейшей кондитерской компании страны (официальная информация).</p>
-      </article>
+</div>
+</section>
 
-      <!-- 15 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://rgbrands.com/" target="_blank" rel="noopener">RG Brands — официальный</a></h3>
-        <p class="desc">Официальный портал группы (повторно указан для удобства перехода к разделам напитков и FMCG).</p>
-      </article>
+<footer>
+<p>© Kazakh Business Hub</p>
+</footer>
 
-      <!-- 16 -->
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.konfetykaragandy.kz/ru/catalog/" target="_blank" rel="noopener">Konfety Karagandy — Каталог</a></h3>
-        <p class="desc">Прямой переход в каталог продукции Карагандинской фабрики — плитки, вафли, конфеты (официальный сайт).</p>
-      </article>
-    </section>
-
-    <p class="footer-note">
-      Источники для ключевых брендов: Rakhat, Bayan Sulu, Konfety Karagandy, RG Brands, TASSAY и Масло-Дел — проверены по официальным сайтам/страницам компаний.
-    </p>
-  </div>
 </body>
 </html>

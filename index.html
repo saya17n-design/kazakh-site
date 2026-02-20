@@ -1,71 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KAZAKH</title>
-  <link rel="stylesheet" href="css/main.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAZAKH — локальные бренды</title>
 
-  <!-- Yandex.Metrika counter -->
-  <script>
-    (function(m,e,t,r,i,k,a){
-      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],
-      k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    ym(106208327, "init", {
-      clickmap:true,
-      trackLinks:true,
-      accurateTrackBounce:true
-    });
-  </script>
-  <noscript>
-    <div>
-      <img src="https://mc.yandex.ru/watch/106208327" style="position:absolute; left:-9999px;" alt="" />
-    </div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
+<style>
+body {
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background: url("img/backgroundindex.jpeg") center/cover no-repeat fixed;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  color:#1e293b;
+}
 
+/* Кнопка регистрации */
+.register-btn {
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:#021D37;
+  color:#fff;
+  padding:12px 24px;
+  border-radius:12px;
+  font-weight:600;
+  text-decoration:none;
+  transition:.3s;
+  z-index:1000;
+}
+
+.register-btn:hover {
+  transform:translateY(-2px);
+  opacity:0.9;
+}
+
+/* Основной контейнер */
+.container {
+  display:flex;
+  align-items:flex-start;
+  gap:30px;
+  max-width:900px;
+  padding:0 20px;
+}
+
+/* Иконка */
+.icon img {
+  width:160px;
+  height:auto;
+}
+
+/* Текст */
+.text-content {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.text-content h1 {
+  font-size:36px;
+  font-weight:700;
+  margin:0 0 15px 0;
+}
+
+.text-content p {
+  font-size:18px;
+  line-height:1.5;
+  margin:0 0 20px 0;
+  max-width:500px;
+}
+
+/* Кнопка подробнее */
+.btn {
+  display:inline-block;
+  padding:14px 32px;
+  border-radius:30px;
+  background: linear-gradient(135deg,#fbbf24,#f59e0b);
+  color:#1e293b;
+  font-weight:600;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.btn:hover {
+  transform:translateY(-2px);
+}
+</style>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="container">
-      <div class="logo-wrapper">
-        <span class="logo">logo</span>
-        <div class="visits">
-          <span>site visited by</span>
-          <a href="https://metrika.yandex.ru/stat/?id=106208327" target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://informer.yandex.ru/informer/106208327/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-              alt="Yandex.Metrika"
-              style="width:88px; height:31px; border:0;"
-            />
-          </a>
-          <span>people</span>
-        </div>
-      </div>
 
-      <nav>
-        <ul>
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-        </ul>
-      </nav>
-    </header>
+<a href="https://saya17n-design.github.io/business-platform" class="register-btn">Регистрация</a>
 
-    <div class="hero container">
-      <div class="hero--info">
-        <h2>Работы, которые создают наши бренды</h2>
-        <h1>Добро пожаловать на платформу казахстанских брендов — открой страну через её идеи</h1>
-        <p>Мы собираем все бренды Казахстана на одной платформе.</p>
-        <a href="about.html" class="btn">Подробнее</a>
-      </div>
-      <img src="img/joystick.svg" alt="joystick" />
-    </div>
+<div class="container">
+
+  <div class="icon">
+    <img src="img/buttonindex.jpeg" alt="домик">
   </div>
+
+  <div class="text-content">
+    <h1>Добро пожаловать в мир казахстанских брендов</h1>
+
+    <p>
+      Платформа объединяет локальных производителей и помогает
+      открывать качественные отечественные продукты.
+    </p>
+
+    <a href="about.html" class="btn">Подробнее</a>
+  </div>
+
+</div>
+
 </body>
 </html>

@@ -1,165 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Дом — мебель, декор и моющие средства</title>
-  <style>
-    :root{
-      --accent: #297AC9;
-      --card-bg: rgba(255,255,255,0.06);
-      --card-bg-hover: rgba(255,255,255,0.12);
-      --text: #ffffff;
-      --muted: #d6d6d6;
-      --max-width: 1200px;
-      --radius: 14px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дом — KAZAKH</title>
+<link rel="stylesheet" href="css/main.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: url("img/backgroundhome.jpeg") no-repeat center center/cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 15px auto 0 auto;
+    line-height: 1.5;
+}
+
+.brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 10px;
+}
+
+.brand {
+    background: rgba(0,0,0,0.6);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brand:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.brand a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* адаптив */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 28px;
     }
-    html,body{
-      height:100%;
-      margin:0;
-      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: url("img/backgroundhome.jpeg") center/cover no-repeat fixed;
-      color: var(--text);
+    .brands-container {
+        gap: 15px;
     }
-    body::before{
-      content:"";
-      position:fixed;
-      inset:0;
-      background: rgba(0,0,0,0.55);
-      z-index:0;
-      backdrop-filter: blur(3px);
-    }
-    .wrap{
-      position:relative;
-      z-index:1;
-      max-width: var(--max-width);
-      margin: 48px auto;
-      padding: 36px;
-    }
-    header{
-      text-align:center;
-      margin-bottom: 20px;
-    }
-    header h1{
-      margin:0;
-      font-size:32px;
-      color: var(--accent);
-      font-weight:700;
-    }
-    header p{
-      margin:12px 0 0;
-      color: var(--muted);
-      max-width:900px;
-      margin-left:auto;
-      margin-right:auto;
-      font-size:15px;
-      line-height:1.5;
-    }
-    .grid{
-      display:grid;
-      gap:20px;
-      margin-top:28px;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-    .card{
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      padding:18px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.35), 0 0 8px rgba(41,122,201,0.04);
-      transition: transform 200ms ease, background 200ms ease, box-shadow 200ms ease;
-      display:flex;
-      flex-direction:column;
-      min-height:140px;
-    }
-    .card:hover{
-      transform: translateY(-6px);
-      background: var(--card-bg-hover);
-      box-shadow: 0 18px 36px rgba(0,0,0,0.5), 0 0 28px rgba(41,122,201,0.08);
-    }
-    .brand-title{
-      font-size:18px;
-      font-weight:700;
-      color: var(--text);
-      margin:0 0 8px 0;
-    }
-    .brand-title a{
-      color: var(--text);
-      text-decoration:none;
-    }
-    .desc{
-      margin:0;
-      color: var(--muted);
-      font-size:14px;
-      line-height:1.45;
-      margin-top:auto;
-    }
-    @media (max-width:600px){
-      header h1{ font-size:22px; }
-      .brand-title{ font-size:16px; }
-      .desc{ font-size:13px; }
-    }
-  </style>
+}
+</style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Мебель, декор и бытовая химия — казахстанские бренды</h1>
-      <p>Вот несколько брендов с официальными ссылками. Остальные добавишь позже.</p>
-    </header>
 
-    <section class="grid">
-      <article class="card">
-        <h3 class="brand-title"><a href="https://zeta.kz/" target="_blank" rel="noopener">ZETA</a></h3>
-        <p class="desc">Производственная компания Казахстана: мягкая и корпусная мебель, широкий ассортимент. 0</p>
-      </article>
+<nav>
+  <a href="index.html">Главная</a>
+  <a href="beauty.html">Красота</a>
+  <a href="food.html">Еда</a>
+  <a href="fashion.html">Мода</a>
+  <a href="home.html">Дом</a>
+  <a href="tech.html">Технологии</a>
+  <a href="about.html">Подробнее</a>
+</nav>
 
-      <article class="card">
-        <h3 class="brand-title"><a href="https://en.azimut-lux.kz/" target="_blank" rel="noopener">Azimut Lux</a></h3>
-        <p class="desc">Онлайн-магазин элитной мебели и домашнего декора в Казахстане. 1</p>
-      </article>
+<div class="header">
+    <h1>Локальные бренды для дома</h1>
+    <p>Казахстанские компании, создающие мебель, текстиль, декор и посуду для современного и уютного пространства.</p>
+</div>
 
-      <article class="card">
-        <h3 class="brand-title"><a href="https://asylana.com/" target="_blank" rel="noopener">ASYLANA</a></h3>
-        <p class="desc">Казахстанский бренд декора и арт-продукции: текстиль, постеры и сувениры с национальным стилем.</p>
-      </article>
+<div class="brands-container">
 
-      <article class="card">
-        <h3 class="brand-title"><a href="https://en.medidez.kz/" target="_blank" rel="noopener">MediDez</a></h3>
-        <p class="desc">Производитель дезинфицирующих и моющих средств в Казахстане — официальная страница компании.</p>
-      </article>
+    <div class="brand"><a href="https://zeta.kz/" target="_blank">ZETA</a><p>Крупный производитель мягкой и корпусной мебели.</p></div>
+    <div class="brand"><a href="https://yurtainteriors.kz" target="_blank">Yurta Interiors</a><p>Дизайнерская мебель с национальными мотивами.</p></div>
+    <div class="brand"><a href="https://region715.kz/en" target="_blank">Region715</a><p>Современное локальное производство мебели.</p></div>
+    <div class="brand"><a href="https://sayrug.kz/" target="_blank">SayRUG</a><p>Интерьерные решения, сочетающие традиции и стиль.</p></div>
+    <div class="brand"><a href="https://en.azimut-lux.kz/" target="_blank">Azimut</a><p>Премиальная мебель и интерьерные каталоги.</p></div>
 
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.home-store.kz/En/Home" target="_blank" rel="noopener">Home-Store</a></h3>
-        <p class="desc">Бутик по мебели, домашнему декору и текстилю с каталогом и шоурумом по Казахстану.</p>
-      </article>
+    <div class="brand"><a href="https://dunie.studio/" target="_blank">DUNIE Studio</a><p>Керамика и посуда ручной работы.</p></div>
+    <div class="brand"><a href="https://www.instagram.com/sanat.ceramics" target="_blank">Sanat Ceramics</a><p>Художественная национальная керамика.</p></div>
+    <div class="brand"><a href="https://www.instagram.com/forma.ceramics" target="_blank">FORMA Ceramics</a><p>Минималистичная современная посуда.</p></div>
+    <div class="brand"><a href="https://carramant.kz/" target="_blank">Carramant</a><p>Посуда и кухонные аксессуары.</p></div>
+    <div class="brand"><a href="https://kausar-home.kz/" target="_blank">Kausar Home</a><p>Товары для кухни и сервировки.</p></div>
 
-      <article class="card">
-        <h3 class="brand-title"><a href="https://tartpa.kz/" target="_blank" rel="noopener">Tartpa</a></h3>
-        <p class="desc">Магазин-галерея с авторскими подарками, постерами и деталями декора — официальный сайт.</p>
-      </article>
+    <div class="brand"><a href="https://www.instagram.com/theyourta" target="_blank">YOURTA</a><p>Домашний текстиль с этническим стилем.</p></div>
+    <div class="brand"><a href="http://tahitdecor.kz" target="_blank">TAHIT</a><p>Шторы, ткани и текстиль для интерьера.</p></div>
+    <div class="brand"><a href="https://no-frames.kz/" target="_blank">No Frames</a><p>Текстильные решения для дома.</p></div>
+    <div class="brand"><a href="https://astanafabrics.kz/eng" target="_blank">Astana Fabrics</a><p>Интерьерные ткани и декор.</p></div>
 
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.sulpak.kz/" target="_blank" rel="noopener">Sulpak</a></h3>
-        <p class="desc">Одна из крупнейших сетей техники и товаров для дома Казахстана — мебель и домашний декор тоже представлены.</p>
-      </article>
+    <div class="brand"><a href="https://madera.kz/" target="_blank">Madera Home</a><p>Декор из натуральных материалов.</p></div>
+    <div class="brand"><a href="https://eichholtz.kz/" target="_blank">Eichholtz Казахстан</a><p>Премиальный интерьерный декор.</p></div>
+    <div class="brand"><a href="https://multidom-decor.kz/" target="_blank">Multidom Decor</a><p>Декоративные элементы для дома.</p></div>
+    <div class="brand"><a href="https://www.kare-design.com/kz-ru/" target="_blank">KARE Design</a><p>Современный дизайнерский декор.</p></div>
+    <div class="brand"><a href="https://divine.kz/eng" target="_blank">Divine</a><p>Интерьерные аксессуары премиум-класса.</p></div>
 
-      <article class="card">
-        <h3 class="brand-title"><a href="https://www.instagram.com/bbsr.store/" target="_blank" rel="noopener">BBSR</a></h3>
-        <p class="desc">Бренд текстиля и аксессуаров: шелковые платки, текстиль для дома, современный дизайн (официальный Instagram).</p>
-      </article>
+</div>
 
-      <article class="card">
-        <h3 class="brand-title"><a href="https://dunie.studio/" target="_blank" rel="noopener">Dunie Studio</a></h3>
-        <p class="desc">Дизайн-студия из Алматы: керамика, предметы декора ручной работы — официальный сайт.</p>
-      </article>
-
-      <article class="card">
-        <h3 class="brand-title"><a href="https://cara.kz/en" target="_blank" rel="noopener">CARA</a></h3>
-        <p class="desc">Казахстанская фабрика мебели: коллекции массивной и дизайнерской мебели для дома и HoReCa. (официальный сайт)</p>
-      </article>
-    </section>
-
-    <p class="footer-note">Если хочешь — могу до завтра найти ещё 5 или 10 брендов с официальными ссылками и прислать обновлённый код.</p>
-  </div>
 </body>
 </html>
