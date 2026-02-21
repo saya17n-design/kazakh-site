@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 body {
   margin:0;
   font-family:'Poppins',sans-serif;
@@ -17,6 +18,26 @@ body {
   justify-content:center;
   min-height:100vh;
   color:#1e293b;
+}
+
+/* Логотип */
+.logo {
+  position:fixed;
+  top:20px;
+  left:20px;
+  font-size:20px;
+  font-weight:700;
+  color:#021D37;
+  letter-spacing:1px;
+  z-index:1000;
+}
+
+/* Счетчик */
+.counter {
+  position:fixed;
+  top:60px;
+  left:20px;
+  z-index:1000;
 }
 
 /* Кнопка регистрации */
@@ -39,7 +60,7 @@ body {
   opacity:0.9;
 }
 
-/* Основной контейнер */
+/* Контейнер */
 .container {
   display:flex;
   align-items:flex-start;
@@ -74,7 +95,7 @@ body {
   max-width:500px;
 }
 
-/* Кнопка подробнее */
+/* Кнопка */
 .btn {
   display:inline-block;
   padding:14px 32px;
@@ -89,10 +110,17 @@ body {
 .btn:hover {
   transform:translateY(-2px);
 }
+
 </style>
 </head>
 
 <body>
+
+<div class="logo">KAZAKH</div>
+
+<div class="counter">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=kazakh-platform-main&left_color=0f172a&right_color=2563eb">
+</div>
 
 <a href="https://saya17n-design.github.io/business-platform" class="register-btn">Регистрация</a>
 

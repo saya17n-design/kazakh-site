@@ -1,123 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fashion Brands - Kazakh Business Hub</title>
+<title>Мода — KAZAKH</title>
 <link rel="stylesheet" href="css/main.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: url("img/backgroundfashion.jpeg") no-repeat center center/cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 15px auto 0 auto;
+    line-height: 1.5;
+}
+
+.brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 10px;
+}
+
+.brand {
+    background: rgba(0,0,0,0.6);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brand:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.brand a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 28px;
+    }
+    .brands-container {
+        gap: 15px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header>
-<h2>Kazakh Business Hub</h2>
 <nav>
-<a href="index.html">Home</a>
-<a href="beauty.html">Beauty</a>
-<a href="fashion.html">Fashion</a>
-<a href="food.html">Food</a>
-<a href="home.html">Home Living</a>
-<a href="tech.html">Tech</a>
+  <a href="index.html">Главная</a>
+  <a href="beauty.html">Красота</a>
+  <a href="food.html">Еда</a>
+  <a href="fashion.html">Мода</a>
+  <a href="home.html">Дом</a>
+  <a href="tech.html">Технологии</a>
+  <a href="about.html">Подробнее</a>
 </nav>
-</header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-<h1>Fashion Brands</h1>
-<p>Local Kazakh streetwear, contemporary and ethnic fashion.</p>
-</section>
+<div class="header">
+    <h1>Локальные модные бренды Казахстана</h1>
+    <p>Streetwear, этно-дизайн и современная мода от казахстанских дизайнеров.</p>
+</div>
 
-<!-- BRANDS GRID -->
-<section class="section">
-<div class="grid">
+<div class="brands-container">
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/kirpi_kz/" target="_blank">Kirpi KZ</a></h3>
-<p class="desc">Современный streetwear бренд из Казахстана с акцентом на индивидуальность.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/kirpi_kz/" target="_blank">Kirpi KZ</a><p>Streetwear бренд с акцентом на индивидуальность.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/qazaq.republic/" target="_blank">Qazaq Republic</a></h3>
-<p class="desc">Культовый бренд, сочетающий казахские мотивы и современный дизайн.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/qazaq.republic/" target="_blank">Qazaq Republic</a><p>Казахские мотивы в современном дизайне.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/howe.qz/" target="_blank">HOWE Athletics</a></h3>
-<p class="desc">Бренд спортивной одежды и аксессуаров, созданный в Казахстане.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/howe.qz/" target="_blank">HOWE Athletics</a><p>Спортивная одежда и аксессуары.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/dala.kazakhstan/" target="_blank">Dala Kazakhstan</a></h3>
-<p class="desc">Элегантная мода, вдохновленная природой и культурой Казахстана.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/dala.kazakhstan/" target="_blank">Dala Kazakhstan</a><p>Элегантная мода с культурным вдохновением.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/qbrandkz/" target="_blank">Q Brand KZ</a></h3>
-<p class="desc">Минимализм, качество и комфорт — идеальный выбор на каждый день.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/qbrandkz/" target="_blank">Q Brand KZ</a><p>Минимализм и комфорт на каждый день.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/qanaker/" target="_blank">Qanaker</a></h3>
-<p class="desc">Современный бренд, подчеркивающий национальную идентичность.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/qanaker/" target="_blank">Qanaker</a><p>Бренд с национальной идентичностью.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/tamyr.taq/" target="_blank">Tamyr</a></h3>
-<p class="desc">Молодой бренд, вдохновленный казахскими корнями и современными трендами.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/tamyr.taq/" target="_blank">Tamyr</a><p>Современные тренды с казахскими корнями.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/basqawear/" target="_blank">Basqa Wear</a></h3>
-<p class="desc">Уличная мода с локальной душой и узнаваемым стилем.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/basqawear/" target="_blank">Basqa Wear</a><p>Уличная мода локального производства.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/qazaq.soul/" target="_blank">Qazaq Soul</a></h3>
-<p class="desc">Этнические мотивы в современной интерпретации.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/qazaq.soul/" target="_blank">Qazaq Soul</a><p>Этническая эстетика в новой форме.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/fuzzz/" target="_blank">FUZZZ</a></h3>
-<p class="desc">Бренд, объединяющий уличную эстетику и локальную идентичность.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/fuzzz/" target="_blank">FUZZZ</a><p>Уличная эстетика и смелый стиль.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/nera_wenera/" target="_blank">Nera Wenera</a></h3>
-<p class="desc">Бренд женской одежды с уникальными силуэтами и эстетикой.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/nera_wenera/" target="_blank">Nera Wenera</a><p>Женская одежда с уникальными силуэтами.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/mat__kzz/" target="_blank">mat_KZZ</a></h3>
-<p class="desc">Локальный бренд минималистичной одежды и аксессуаров.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/mat__kzz/" target="_blank">mat_KZZ</a><p>Минималистичная одежда и аксессуары.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/borte.wear/" target="_blank">Borte Wear</a></h3>
-<p class="desc">Современная женская мода в казахстанском стиле.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/borte.wear/" target="_blank">Borte Wear</a><p>Современная женская мода.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/la_stella_look_/" target="_blank">La Stella Look</a></h3>
-<p class="desc">Женственная и элегантная одежда для современных девушек.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/la_stella_look_/" target="_blank">La Stella Look</a><p>Элегантная одежда для повседневного стиля.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/agesandages_/" target="_blank">Ages & Ages</a></h3>
-<p class="desc">Молодежный бренд, сочетающий комфорт и стиль.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/agesandages_/" target="_blank">Ages & Ages</a><p>Молодежный бренд комфорта и стиля.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.instagram.com/khaf.kz/" target="_blank">KHAF</a></h3>
-<p class="desc">Казахстанский бренд, вдохновленный архитектурой и природой.</p>
-</article>
+<div class="brand"><a href="https://www.instagram.com/khaf.kz/" target="_blank">KHAF</a><p>Вдохновение архитектурой и природой.</p></div>
 
 </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-<p>© Kazakh Business Hub</p>
-</footer>
 
 </body>
 </html>

@@ -1,89 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Brands - Kazakh Business Hub</title>
+<title>Технологии — KAZAKH</title>
 <link rel="stylesheet" href="css/main.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: url("img/backgroundtech.jpeg") no-repeat center center/cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 15px auto 0 auto;
+    line-height: 1.5;
+}
+
+.brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 10px;
+}
+
+.brand {
+    background: rgba(0,0,0,0.6);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brand:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.brand a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 28px;
+    }
+    .brands-container {
+        gap: 15px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<header>
-<h2>Kazakh Business Hub</h2>
 <nav>
-<a href="index.html">Home</a>
-<a href="beauty.html">Beauty</a>
-<a href="fashion.html">Fashion</a>
-<a href="food.html">Food</a>
-<a href="home.html">Home Living</a>
-<a href="tech.html">Tech</a>
+  <a href="index.html">Главная</a>
+  <a href="beauty.html">Красота</a>
+  <a href="food.html">Еда</a>
+  <a href="fashion.html">Мода</a>
+  <a href="home.html">Дом</a>
+  <a href="tech.html">Технологии</a>
+  <a href="about.html">Подробнее</a>
 </nav>
-</header>
 
-<section class="hero">
-<h1>Tech Brands</h1>
-<p>IT, electronics and tech companies in Kazakhstan.</p>
-</section>
+<div class="header">
+    <h1>Технологические компании Казахстана</h1>
+    <p>IT, онлайн-сервисы, электроника и цифровые платформы страны.</p>
+</div>
 
-<section class="section">
-<div class="grid">
+<div class="brands-container">
 
-<article class="card">
-<h3 class="brand-title"><a href="https://cifrotech.com/kazakhstan" target="_blank">Cifrotech</a></h3>
-<p class="desc">Дистрибьютор Xiaomi, Poco, Roborock, Motorola и ZTE.</p>
-</article>
+<div class="brand"><a href="https://kaspi.kz/" target="_blank">Kaspi.kz</a><p>Крупнейшая цифровая платформа: финансы, платежи, маркетплейс и сервисы.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://stn.kz/en" target="_blank">STN</a></h3>
-<p class="desc">Дистрибьютор IT-продуктов, телекоммуникационного оборудования и техники.</p>
-</article>
+<div class="brand"><a href="https://shop.kz/" target="_blank">Белый Ветер KZ</a><p>Интернет-магазин электроники и цифровой техники.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://ag-tech.kz/" target="_blank">AG TECH</a></h3>
-<p class="desc">Разработчик программного и аппаратного обеспечения.</p>
-</article>
+<div class="brand"><a href="https://www.mechta.kz/" target="_blank">Mechta.kz</a><p>Сеть магазинов техники и бытовой электроники.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://nova-tech.kz/" target="_blank">NOVA</a></h3>
-<p class="desc">Производство электронных устройств, ПК и серверов.</p>
-</article>
+<div class="brand"><a href="https://cifrotech.com/kazakhstan" target="_blank">Cifrotech</a><p>Дистрибьютор устройств и электроники.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://amtelectronics.com/new/kazakhstan/" target="_blank">AMT Electronics</a></h3>
-<p class="desc">Дистрибьютор аудио- и видеотехники.</p>
-</article>
+<div class="brand"><a href="https://stn.kz/en" target="_blank">STN</a><p>Дистрибьютор IT и телеком-оборудования.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://arystan-it.kz/en/o-kompanii/" target="_blank">Arystan IT</a></h3>
-<p class="desc">Производитель IT-продуктов с сертифицированным сервисным центром.</p>
-</article>
+<div class="brand"><a href="https://ag-tech.kz/" target="_blank">AG TECH</a><p>Разработка программных и аппаратных решений.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.3mkazakhstan.com/3M/ru_KZ/company-export/" target="_blank">3M Kazakhstan</a></h3>
-<p class="desc">Решения в здравоохранении, безопасности и производстве.</p>
-</article>
+<div class="brand"><a href="https://nova-tech.kz/" target="_blank">NOVA</a><p>Производство электроники и серверных решений.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://kpe.com.kz/" target="_blank">Kazakhstan Paramount Engineering</a></h3>
-<p class="desc">Производитель бронетехники и электрооптических устройств.</p>
-</article>
+<div class="brand"><a href="https://amtelectronics.com/new/kazakhstan/" target="_blank">AMT Electronics</a><p>Аудио- и видеотехника.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.groupeseb.com/en" target="_blank">Groupe SEB</a></h3>
-<p class="desc">Бренды Tefal, Rowenta, Moulinex, мелкая бытовая техника.</p>
-</article>
+<div class="brand"><a href="https://arystan-it.kz/en/o-kompanii/" target="_blank">Arystan IT</a><p>IT-продукты и сервисное обслуживание.</p></div>
 
-<article class="card">
-<h3 class="brand-title"><a href="https://www.groupeseb.com/en" target="_blank">Moulinex</a></h3>
-<p class="desc">Мелкая бытовая техника для кухни и дома.</p>
-</article>
+<div class="brand"><a href="https://www.3mkazakhstan.com/3M/ru_KZ/company-export/" target="_blank">3M Kazakhstan</a><p>Технологические решения и инновации.</p></div>
+
+<div class="brand"><a href="https://kpe.com.kz/" target="_blank">Kazakhstan Paramount Engineering</a><p>Инженерные и высокотехнологичные разработки.</p></div>
+
+<div class="brand"><a href="https://www.groupeseb.com/en" target="_blank">Groupe SEB</a><p>Производитель бытовой техники.</p></div>
+
+<div class="brand"><a href="https://www.groupeseb.com/en" target="_blank">Moulinex</a><p>Кухонная техника и бытовые устройства.</p></div>
 
 </div>
-</section>
-
-<footer>
-<p>© Kazakh Business Hub</p>
-</footer>
 
 </body>
 </html>
